@@ -12,81 +12,60 @@
   </head>
   <body>
 	<div class="over_all_container">
-		<div class="item0">
+		<div class="header">
 			<text class="font-effect-fire">JUME MEGA WEARS AND ACCESSORIES</text>
 		</div>
-		<div class="item1">
-			<img src="images/logo.jpg" alt="jume" width="50px"/>
-			<text>JUME</text>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About Us</a></li>
-					<li><a href="#contact">Contact Us</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-				</ul>
-			<nav>
-		</div>
-		<div id="about" class="item3">
-			<div class="primary_text">
-				<p><strong>We bring your conceptual <br> imagination to <i style="color:red;">life</i></strong></p>
+		<div class="nav_bar">
+			<div class="nav_left">
+				<img class="nav_img" src="images/logo.jpg" alt="jume"/>
+				<text class="jume_text">JUME</text>
 			</div>
-			<div class="secondary_text">
-				<p><strong><i class="fa-solid fa-at fa-xl" style="color: #f26537;"></i> Jume Mega wears & accessories we tailor our 
+			<div class="nav_list">
+				<a href="#">Home</a>
+				<a href="#about">About Us</a>
+				<a href="#contact_us">Contact Us</a></li>
+				<a href="gallery.html">Gallery</a>
+			</div>
+		</div>
+		<div id= "about"class="about_us">
+			<div class="about_us_left">
+				<p class="primary_text"><strong>We bring your conceptual <br> imagination to <i style="color:red;">life</i></strong></p>
+				<p class="secondary_text"><strong><i class="fa-solid fa-at fa-xl" style="color: #f26537;"></i> Jume Mega wears & accessories we tailor our 
 					clients conceptual imagination to life. We deal on unisex wears ranging from departmental/faculty wears, 
 					polos, shirts, final year sign out wears, hoodies, varsity jackets, scrubs, graduating stole and what have you and their brandings</strong></p>
 			</div>
-		</div>
-		<div class="item4"> 
-				<div id="slider">
-					<figure>
-						<img src="jume_hood_pics/1.jpg">
-						<img src="jume_hood_pics/2.jpg">
-						<img src="jume_hood_pics/3.jpg">
-						<img src="jume_hood_pics/4.jpg">
-						<img src="jume_hood_pics/5.jpg">
-						<img src="jume_hood_pics/6.jpg">
-						<img src="jume_hood_pics/7.jpg">
-						<img src="jume_hood_pics/8.jpg">
-						<img src="jume_hood_pics/9.jpg">
-						<img src="jume_hood_pics/1.jpg">
-					</figure>
-				</div>
-		</div>
-		<div id="contact" class="item5">
-			<div class="contact">
-				<p>16 Emejiaka Street, Ngwa Rd, Aba Abia State</p>
-				<p><a href="mailto:jumewears10@gmail">jumewears10@gmail.com</a></p>
-				<p><a href="tel:+2348139425458">+2348139425458</a></p>
-				<p>RC: 3839672</p>
+			<div class="about_us_right">
+				<img src="jume_hood_pics/1.jpg">
 			</div>
 		</div>
-		<div class="item6">
+		<div class="slid">
+			<div id="slider">
+				<figure>
+					<img src="jume_hood_pics/1.jpg">
+					<img src="jume_hood_pics/2.jpg">
+					<img src="jume_hood_pics/3.jpg">
+					<img src="jume_hood_pics/4.jpg">
+					<img src="jume_hood_pics/5.jpg">
+					<img src="jume_hood_pics/6.jpg">
+					<img src="jume_hood_pics/7.jpg">
+					<img src="jume_hood_pics/8.jpg">
+					<img src="jume_hood_pics/9.jpg">
+					<img src="jume_hood_pics/1.jpg">
+				</figure>
+			</div>
+		</div>
+		<div id="contact_us">
+			<p class="red"><strong>16 Emejiaka Street, Ngwa Rd, Aba Abia State</strong></p>
+			<p><a href="mailto:jumewears10@gmail">jumewears10@gmail.com</a></p>
+			<p><a href="tel:+2348139425458">+2348139425458</a></p>
+			<p>RC: 3839672</p>
+		</div>
+		<div class="footer">
 			<a href="https://wa.link/hgadxf" class="link"><i class="fa-brands fa-whatsapp fa-beat fa-2xl" style="color: #ffffff;"></i></a>
 			<a href="https://instagram.com/jume_mega_wears?igshid=ZGUzMzM3NWJiOQ==" class="link"><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ffffff;"></i></a>
 		</div>
-	</div>
 	<div class="gallery_link">
 		<a  href="gallery.html"><img src="images/picture.png" alt="Gallery" width="60" height="60"></a>
 	</div>
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		}
-	</script>
   </body>
 </html>
