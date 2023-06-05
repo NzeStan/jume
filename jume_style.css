@@ -5,7 +5,7 @@
 .over_all_container {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 200px auto 500px auto 400px 80px;
+	grid-template-rows: 200px auto auto auto 400px 80px;
 }
 .header {
 	display: grid;
@@ -62,7 +62,7 @@
 }
 .nav_list a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 10px;
 	color: white;
 }
 .nav_list a:hover {
@@ -70,8 +70,8 @@
 }
 .about_us {
 	display: grid;
-	grid-template-columns: 60% 20%;
-	grid-template-rows: 60% 20%;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
 	grid-gap: 10px;
 	justify-content: center;
 	align-content: center;
@@ -81,17 +81,22 @@
 	grid-template-columns: auto;
 }
 .about_us_right {
-	/*add more style like circle*/
+	border: 2px solid red;
+	box-shadow: 10px 10px 5px ;
+	border-radius: 5px;
+	display: none;
 }
 .about_us_right img {
 	width: 100%;
 	height: 100%;
 }
 .primary_text {
+	padding: 20px;
 	font-size: 25px;
 }
 .secondary_text{
-	font-size: 10px;
+	padding: 20px;
+	font-size: 20px;
 	text-align: center;
 }
 .slid {
@@ -102,7 +107,7 @@
 }
 #slider {
 	overflow: hidden;
-	height: 600px;
+	height: 400px;
 	width: 100%;
 	margin: auto;
 }
@@ -218,5 +223,21 @@
 }
 #slider {
 	width: 80%;
+	height: 600px;
+}
+.nav_list a {
+	font-size: 20px;
+}
+.over_all_container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 200px auto 500px auto 400px 80px;
+}
+.about_us {
+	grid-template-columns: 60% 20%;
+	grid-template-rows: 60% 20%;
+}
+.about_us_right {
+	display: block;
 }
 }
