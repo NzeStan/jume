@@ -100,7 +100,7 @@
 	text-align: center;
 }
 .slid {
-	background-image: url("images/slide.jpg");
+	background-image: url("https://res.cloudinary.com/dhhaiy58r/image/upload/v1685717261/image/slide_dvbcpf.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	
@@ -186,7 +186,7 @@
 	}
 }
 #contact_us {
-	background-image: url("images/contact-us-image.jpg");
+	background-image: url("https://res.cloudinary.com/dhhaiy58r/image/upload/v1685717260/image/contact-us-image_bghevi.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: grid;
