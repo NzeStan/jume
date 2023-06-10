@@ -6,9 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/1bf8af1210.js" crossorigin="anonymous"></script>
   </head>
   <body>
+	  <!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Hey Buddy &#128512</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<p>You are not constrained by the desgins and combinations here, you can always come up with a desgin and combination you love.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
 	<div class="gallery_container">
 		<div class="top">
 			<video autoplay muted ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686076320/videos/1_uqk5fe.mp4" type = "video/mp4"></video>
@@ -117,7 +134,9 @@
 		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1685717654/hood_pics/45_gbt8id.jpg"></div>
 		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1685717654/hood_pics/46_elwpoj.jpg"></div>
 		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1686076535/hood_pics/47_sjr18z.jpg"></div>
-		
+		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1686407056/jume_others/47_ououha.jpg"></div>
+		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1686407057/jume_others/46_uhpdya.jpg"></div>
+		<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1686407057/jume_others/48_trby2c.jpg"></div>
 		</div>
 		<div id="vi"class="video_main">	
 			<!--<div class="video_text"><p>Videos</p></div>-->
@@ -163,6 +182,8 @@
 			<video class="video" controls ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686076355/videos/40_fkyruk.mp4" type = "video/mp4"></video>
 			<video class="video" controls ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686076359/videos/41_kpyg8f.mp4" type = "video/mp4"></video>
 			<video class="video" controls ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686076355/videos/42_hohwod.mp4" type = "video/mp4"></video>
+			<video class="video" controls ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686406931/videos/43_yhdaud.mp4" type = "video/mp4"></video>
+			<video class="video" controls ><source src = "https://res.cloudinary.com/dhhaiy58r/video/upload/v1686406930/videos/44_u0znhv.mp4" type = "video/mp4"></video>
 		</div>
 		<div id="in"class="inspo">
 			<!--<div class="inspo_text"><p>Inspo</p></div>-->
@@ -216,10 +237,14 @@
 			<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1685718021/inspo/48_lh3pfi.jpg"></div>
 			<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1685718021/inspo/49_xg78hi.jpg"></div>
 			<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1685718021/inspo/50_q4dbsf.jpg"></div>
+			<div><img src="https://res.cloudinary.com/dhhaiy58r/image/upload/v1686408009/inspo/51_xhnfia.jpg"></div>
 		</div>
 		<div class="foot">
 			<div class="link1"><a href="https://wa.link/hgadxf"><i class="fa-brands fa-whatsapp fa-beat fa-2xl" style="color: #ffffff;"></i></a></div>
 			<div class="link2"><a href="https://instagram.com/jume_mega_wears?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ffffff;"></i></a></div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		<script type="text/javascript">$('#exampleModal').modal('show')</script>
   </body>
 </html>
