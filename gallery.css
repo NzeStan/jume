@@ -2,119 +2,135 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
-.gallery_container {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 150px auto auto auto auto auto;
-}
-.top video {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.pics {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-	grid-gap: 10px;
-	padding: 10px;
-}
-.pics img {
-	width: 100%;
-	height: 100%;
-}
-.nav_bar {
-	display: grid;
-	grid-template-columns: 95px auto;
-	background-color: #333333;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	z-index:1001;
-}
-.jume_text {
-	align-self: center;
-	color: #f26537;
-}
-.nav_img{
-	width:100%;
-	height: 100%;
-}
-.nav_left {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 10px;
-	margin-left: 10px;
-}
-.nav_list {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	align-content: center;
-	justify-content: end;
-	grid-gap: 10px;
-	margin-right: 10px;
-}
-.nav_list a {
-	text-decoration: none;
-	font-size: 10px;
-	color: white;
-}
-.nav_list a:hover {
-	color: #f26537;
-}
-.video_main {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-	grid-gap: 10px;
-	padding: 10px;
-}
-.video {
-	width: 100%;
-	height: 100%;
+
+.gallery_top{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 200px;
+    margin-bottom: 20px;
 }
 
-.inspo {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-	grid-gap: 10px;
-	padding: 10px;
+.header{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    animation-name: header2;
+	animation-duration: 10s;
+    margin-top: 50px;
 }
+.font-effect-fire {
+    text-align: center;
+	font-size: 25px;
+	font-family: "Sofia", mogra, Yellowtail, sans-serif;
+	animation-name: header1;
+	animation-duration: 10s;
+}
+@keyframes header1 {
+  from {font-family: Mogra;}
+  to {font-family: Yellowtail;}
+}
+@keyframes header2 {
+  from {background-color: blue;}
+  to {background-color: black;}
+}
+
+.gallery_body{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.pics{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 300px;
+}
+.pics img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.pics div {
+    border: 2px;
+    border-radius: 30px;
+}
+
+.video{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 300px;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.video div {
+    border: 2px;
+    border-radius: 30px;
+}
+
+.inspo{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 300px;
+}
+
 .inspo img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
 }
+
+.inspo div{
+    border: 2px;
+    border-radius: 30px;
+}
+
 .foot{
 	background-color: #333333;
 	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: 80px;
+	grid-template-columns: auto auto auto;
+	grid-auto-rows: 80px;
 	align-items: center;
+    margin-top: 20px;
 }
-.link1 {
-	display: grid;
-	justify-content: center;
+
+.foot div {
+    justify-self: center;
 }
-.link2 {
-	display: grid;
-	justify-content: center;
-	
+
+.all_right{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
+
+.icon_link{
+    display: none;
+    grid-template-columns: auto;
+    gap: 35px;
+    position: fixed;
+	top: 300px;
+	left: 30px;
+}
+
 @media (min-width: 1200px) {
-	.pics {
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-}
-.video_main {
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-}
-.inspo {
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-}
-.nav_list a {
-	font-size: 20px;
-}
+    .icon_link{
+        display: grid;
+    }
+    .font-effect-fire {
+        font-size: 50px;
+    }
 }
