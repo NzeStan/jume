@@ -1,7 +1,6 @@
 * {
 	margin: 0px;
 	box-sizing: border-box;
-    overflow: hidden;
 }
 
 .index_top{
@@ -39,7 +38,7 @@
 .index_body{
     display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: auto 400px 400px;
+	grid-template-rows: auto auto 400px;
 }
 
 .body1{
