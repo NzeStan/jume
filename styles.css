@@ -43,7 +43,7 @@
 
 .body1{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     margin-top: 20px;
 }
 .image_box{
