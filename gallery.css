@@ -34,6 +34,12 @@
   from {background-color: blue;}
   to {background-color: black;}
 }
+.navbar-nav a{
+	color: white;
+}
+.navbar-nav a:hover{
+    color: #f26537;
+}
 
 .gallery_body{
     display: grid;
